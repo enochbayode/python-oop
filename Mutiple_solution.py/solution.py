@@ -25,3 +25,20 @@ for str_items in items:
 from random import choice
 random_item = ['orange', 'rice', 'apple', 'pawpaw']
 print ('Randomly picked',choice(random_item))
+
+# Write a Python program to remove all elements from a given list present in another list.
+list1 = [1,2,3,4,5,6,7,8]
+list2 = [2,4,6,8]
+
+for n in list2:
+    if n in list1:
+        list1.remove(n)
+print (list1)
+
+# list1 = [list1.remove(n) for n in list2[if n in list1]]
+
+#  Write a Python program to reverse strings in a given list of string values.
+items = ['blue', 'red', 'green', 'yellow']
+for i in items:
+    result = i[::-1]
+    print (result)
